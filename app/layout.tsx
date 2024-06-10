@@ -34,6 +34,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  // eventually add socials
 }
 
 const cx = (...classes) => classes.filter(Boolean).join(' ')
