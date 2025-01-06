@@ -25,8 +25,8 @@ export default function Page() {
             {`, a trivia game for bars and restaurants that leverages AI to make hosting trivia nights easier.`}
           </p>
           <p>
-            And, if that didn&apos;t take up enough time, I&apos;m also a part-time farmer in Corralitos, CA (<Link href="https://www.instagram.com/corralitoshillsfarm" className="underline underline-offset-4 underline-thickness-2 hover:text-blue-600 dark:hover:text-blue-400" target='_blank'>@corralitoshillsfarm</Link>), 
-             opening a pumpkin patch this fall.
+            And, if that didn&apos;t take up enough time, I&apos;m also a part-time farmer in Corralitos, CA (<Link href="https://www.instagram.com/corralitoshillsfarm" className="underline underline-offset-4 underline-thickness-2 hover:text-blue-600 dark:hover:text-blue-400" target='_blank'>@corralitoshillsfarm</Link>). 
+             
           </p>
         </div>
       </div>
