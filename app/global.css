@@ -85,6 +85,7 @@ html {
 
 .prose p {
   @apply my-4 text-neutral-800 dark:text-neutral-200;
+  line-height: 1.75;
 }
 
 .prose h1 {
@@ -108,7 +109,9 @@ html {
 }
 
 .prose ul {
-  @apply list-disc pl-6;
+  /* add some space between list items */
+  @apply list-disc pl-6 my-2;
+  line-height: 1.75;
 }
 
 .prose ol {

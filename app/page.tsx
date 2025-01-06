@@ -9,7 +9,7 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         About me
       </h1>
-      <div className="grid sm:grid-cols-2 gap-3 grid-cols-1 justify-items-center sm:justify-items-start">
+      <div className="grid sm:grid-cols-2 gap-1 grid-cols-1 justify-items-center sm:justify-items-start">
         <div className="grid-span-1 sm:grid-span-1">
           <Image src={profilePic} alt="Jayson Kadlecek" className="rounded-full mb-4" width={200} height={200}/>
         </div>
