@@ -15,7 +15,7 @@ export default function Page() {
         </div>
         <div className="grid-span-4 sm:text-justify sm:grid-span-1">
           <p className="mb-4">
-            {`I'm Jayson Kadlecek (pronounced Jay-son Cad-luh-check) and I love to build things. My day job is as a Senior Product Manager at Zapier, where I work on our core workflow "Runner" product.
+            {`I'm Jayson Kadlecek (pronounced Jay-son Cad-luh-check) and I love to build things. My day job is as a Senior Product Manager at Stripe, where I'm working on all things APIs. Previously I was a Senior Product Manager at Zapier, where I worked on our core workflow "Runner" product.
             I also like to scratch my coding itch by building side projects and writing about my experiences. My most recent fun project is `}
               <Link 
               href="https://www.bartrivia.ai" 
