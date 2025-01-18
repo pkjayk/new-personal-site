@@ -20,6 +20,7 @@ export function generateMetadata({ params }) {
   let {
     title,
     publishedAt: publishedTime,
+    updatedAt: modifiedTime,
     summary: description,
     image,
   } = post.metadata
@@ -33,6 +34,7 @@ export function generateMetadata({ params }) {
       description,
       type: 'article',
       publishedTime,
+      modifiedTime,
       url: `${baseUrl}/musings/${post.slug}`,
       images: [
         {
@@ -67,7 +69,7 @@ export default function Blog({ params }) {
             '@type': 'BlogPosting',
             headline: post.metadata.title,
             datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
+            dateModified: post.metadata.updatedAt,
             description: post.metadata.summary,
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
@@ -83,10 +85,17 @@ export default function Blog({ params }) {
       <h1 className="title font-semibold text-2xl tracking-tighter">
         {post.metadata.title}
       </h1>
-      <div className="flex justify-between items-center mt-2 mb-8 text-sm">
+      <div className="flex justify-between items-center mt-2 mb-1 text-sm">
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          {formatDate(post.metadata.publishedAt)}
+          published {formatDate(post.metadata.publishedAt)}
         </p>
+      </div>
+      <div className="mb-8">
+      <p className="text-sm text-neutral-600 dark:text-neutral-400 italic">
+      {post.metadata.updatedAt
+            ? `last updated ${formatDate(post.metadata.updatedAt)}`
+            : ''}
+      </p>
       </div>
       <article className="prose">
         <CustomMDX source={post.content} />

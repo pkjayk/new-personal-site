@@ -93,11 +93,11 @@ html {
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-3xl font-bold tracking-tight mt-6 mb-2;
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-lg font-semibold tracking-tight mt-6 mb-2;
 }
 
 .prose h4 {
@@ -106,6 +106,10 @@ html {
 
 .prose strong {
   @apply font-medium;
+}
+
+.indented {
+  @apply ml-6;
 }
 
 .prose ul {
